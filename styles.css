@@ -5,7 +5,7 @@
 
 .game-page__heading {
 	font-size: 25px;
-	text-shadow: .5px .5px 20px #4a2766;
+	text-shadow: .5px .5px 10px #bcbcbc;
 	position: relative;
 	top: 15px;
 	left: 25px;
@@ -25,10 +25,16 @@
 	left: 25px;
 }
 
+/*.game-page__battle {
+	border: 1px solid black;
+	height: 60px;
+	width: 250px;
+}*/
+
 .game-page__input {
-	border:1px solid black;
+	border: 1px solid black;
 	border-radius:3px;
-	box-shadow: 1px 1px 4px #4a2766;
+	box-shadow: 1px 1px 8px #fcbd34;
 	padding:10px 5px;
 	margin-left: 10px;
 	margin-right: 30px;
@@ -36,33 +42,65 @@
 	height: 20px;
 }
 
-.user-input {
+.user-display {
 	position: relative;
 	left: 50px;
 	top: 10px;
 }
 
-.computer-input {
+.computer-display {
 	position: relative;
 	left: 75px;		
 	top: 10px;
 }
 
+.game-page__versus {
+	font-family: 'Lora', serif;
+	position: relative;
+	top: -45px;
+	left: 145px;
+}
+
 .game-result {	
-	background: #96a5bc;
+	background: #ff9a00;
 	border: 1px solid black;
 	border-radius: 3px;
-	box-shadow: 1px 1px 1px #1852af;
+	box-shadow: 1px 1px 8px #1852af;
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	top: 50px;
-	left: 15px;
-	height: 50px;	
+	top: -25px;
+	left: 10px;
+	height: 100px;
+	width: 300px;	
 }
 
-.result {
+.result-display {
+	box-shadow: 1px 1px 4px black;
 	position: relative;
-	top: 4px;
+	top: 16px;
 	left: 8px;
+	height: 48px;
+}
+
+.game-result__label {
+	font-family: 'Lora', serif;
+	font-weight: bold;
+	padding:10px 5px;
+	position: relative;
+	top: 55px;
+	left: -292.5px;
+	margin-left: 10px;
+	margin-right: 40px; 
+}
+
+.game-result__label-line {
+	display: inline-block;
+	border-top: 1px solid black;
+	position: relative;
+	top: -75px;
+	left: 19px;	
+	margin-left: 10px;
+	margin-right: 25px;
+	width: 61px;
 }

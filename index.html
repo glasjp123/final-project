@@ -4,6 +4,7 @@
 	<title>Rock, Paper, Scissors</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
 	<script src='final.js'></script>
 	<meta charset="UTF-8">
@@ -16,14 +17,22 @@
 		<img src="paper.jpg" class="game-page__image">
 		<img src="scissors.jpg" class="game-page__image">
 		<p class="game-page__instruction">Please click image to choose your play</p>
-		<!-------------------------- add labels --------------------------------->
-		<input type="text" name="computer" class="game-page__input user-input" readonly>
-		<input type="text" name="computer" class="game-page__input computer-input" readonly>
-		<div class="game-result">
-			<input type="text" name="computer" class="game-page__input result" readonly>
-			<input type="text" name="computer" class="game-page__input result" readonly>
-			<input type="text" name="computer" class="game-page__input result" readonly>
+		<div class="game-page__battle">
+			<input type="text" name="user" class="game-page__input user-display" readonly>
+			<input type="text" name="computer" class="game-page__input computer-display" readonly>
+			<h2 class="game-page__versus">vs.</h2>
 		</div>
+		<div class="game-result">
+			<input type="text" name="win" class="game-page__input result-display" readonly>
+			<input type="text" name="loss" class="game-page__input result-display" readonly>
+			<input type="text" name="tie" class="game-page__input result-display" readonly>
+			<label class="game-result__label">Wins</label>
+			<label class="game-result__label">Losses</label>
+			<label class="game-result__label">Ties</label>
+		</div>
+			<div class="game-result__label-line"></div>	
+			<div class="game-result__label-line"></div>
+			<div class="game-result__label-line"></div>
 	</div>
 </body>
 </html>
