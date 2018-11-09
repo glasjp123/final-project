@@ -3,7 +3,7 @@
 <head>
 	<title>Rock, Paper, Scissors</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
 	<script src='final.js'></script>
@@ -13,9 +13,12 @@
 <body>
 	<div class="game-page">
 		<h1 class="game-page__heading">The World's Oldest Game</h1>
-		<img src="rock.jpg" class="game-page__image">
-		<img src="paper.jpg" class="game-page__image">
-		<img src="scissors.jpg" class="game-page__image">
+		<h2 class="game-page__title">Rock, Paper, Scissors</h2>
+		<div class="game-page__user-selector">
+			<img src="rock.jpg" class="game-page__image">
+			<img src="paper.jpg" class="game-page__image">
+			<img src="scissors.jpg" class="game-page__image">
+		</div>
 		<p class="game-page__instruction">Please click image to choose your play</p>
 		<div class="game-page__battle">
 			<input type="text" name="user" class="game-page__input user-display" readonly>
@@ -30,9 +33,6 @@
 			<label class="game-result__label">Losses</label>
 			<label class="game-result__label">Ties</label>
 		</div>
-			<div class="game-result__label-line"></div>	
-			<div class="game-result__label-line"></div>
-			<div class="game-result__label-line"></div>
 	</div>
 </body>
 </html>

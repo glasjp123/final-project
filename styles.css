@@ -1,6 +1,6 @@
 
 .game-page {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Oswald', sans-serif;
 }
 
 .game-page__heading {
@@ -8,28 +8,42 @@
 	text-shadow: .5px .5px 10px #bcbcbc;
 	position: relative;
 	top: 15px;
-	left: 25px;
+	left: 12%;
+}
+
+.game-page__title {
+	color: #fcbd34;
+	text-shadow: .5px .5px 10px black;
+	position: relative;
+	left: 17.5%;
+	top: 5px;
+}
+
+.game-page__user-selector {
+
 }
 
 .game-page__image {
-	position: relative;
-	left: 5px;
-	top: 25px;
+	padding-top: 15px;
 	height: 80px;
 	width: auto;
-	margin-left: 5px;
 }
 
 .game-page__instruction {
 	position: relative;
-	left: 25px;
+	left: 10%;
+	padding-top: 0px;
 }
 
-/*.game-page__battle {
+.game-page__battle {
 	border: 1px solid black;
-	height: 60px;
-	width: 250px;
-}*/
+	border-radius: 3px;
+	height: 75px;
+	width: 275px;
+	position: relative;
+	left: 15px;
+	top: 15px;
+}
 
 .game-page__input {
 	border: 1px solid black;
@@ -44,21 +58,23 @@
 
 .user-display {
 	position: relative;
-	left: 50px;
+	left: -5px;
 	top: 10px;
+	width: 70px;
 }
 
 .computer-display {
 	position: relative;
-	left: 75px;		
+	left: 25px;		
 	top: 10px;
+	width: 70px;
 }
 
 .game-page__versus {
 	font-family: 'Lora', serif;
 	position: relative;
 	top: -45px;
-	left: 145px;
+	left: 112.5px;
 }
 
 .game-result {	
@@ -69,8 +85,8 @@
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	top: -25px;
-	left: 10px;
+	top: 50px;
+	left: 5px;
 	height: 100px;
 	width: 300px;	
 }
@@ -92,15 +108,4 @@
 	left: -292.5px;
 	margin-left: 10px;
 	margin-right: 40px; 
-}
-
-.game-result__label-line {
-	display: inline-block;
-	border-top: 1px solid black;
-	position: relative;
-	top: -75px;
-	left: 19px;	
-	margin-left: 10px;
-	margin-right: 25px;
-	width: 61px;
 }
