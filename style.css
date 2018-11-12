@@ -33,11 +33,6 @@ body {
 	width: auto;
 }
 
-.game-page__image:hover {
-	border: 1px solid gray;
-	box-shadow: 1px 1px 5px gray;
-}
-
 .game-page__instruction {
 	position: relative;
 	left: 75px;
@@ -197,6 +192,18 @@ body {
 .game-page {
 	left: 0px;
 }
+
+.win {
+	left: -282px;
+}
+
+.loss {
+	left: -235px;
+}
+.tie {
+	left: -185px;
+}
+}
 /*****************************************************END MOBILE STYLES*******************************************/
 @media all and (min-width: 960px){
 
@@ -218,6 +225,11 @@ body {
 	height: 175px;
 	margin-right: 100px;
 	padding: 10px 10px;
+}
+
+.game-page__image:hover {
+	border: 1px solid gray;
+	box-shadow: 1px 1px 5px gray;
 }
 
 .game-page__instruction {
