@@ -186,7 +186,7 @@ body {
 @media all and (min-width: 370px){
 
 body {
-	width: 375px;
+	width: 320px;
 }
 
 .game-page {
@@ -198,10 +198,10 @@ body {
 }
 
 .loss {
-	left: -235px;
+	left: -230px;
 }
 .tie {
-	left: -185px;
+	left: -180px;
 }
 }
 /*****************************************************END MOBILE STYLES*******************************************/
