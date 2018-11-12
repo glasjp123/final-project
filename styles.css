@@ -4,42 +4,25 @@
 	text-align: justify;
 }
 
-.game-page__lead {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	left: 50px;
-}
-
-.game-page__heading {
-	font-size: 35px;
-	margin: 0;
-	text-shadow: .5px .5px 10px #bcbcbc;
-	position: relative;
-	left: -20px;
-	top: 20px;
-	width: 600px;
-}
-
 .game-page__title {
 	color: #343e4f;
-	text-decoration: underline;
+	letter-spacing: .7px;
 	text-shadow: .5px .5px .5px black;
+	word-spacing: 5px;
 	position: relative;
 	top: 20px;
-	left: 50px;	
+	left: 75px;	
 }
 
 .game-page__selector {
 	position: relative;
 	top: 20px;
-	left: 50px;
+	left: 75px;
 }
 
 .game-page__image {
 	cursor: pointer;
 	margin-right: 15px;
-	margin-left: 5px;
 	padding-top: 15px;
 	padding-left: 10px;
 	height: 80px;
@@ -53,7 +36,7 @@
 
 .game-page__instruction {
 	position: relative;
-	left: 50px;
+	left: 75px;
 	padding-top: 15px;
 }
 
@@ -65,7 +48,7 @@
 	height: 105px;
 	width: 290px;
 	position: relative;
-	left: 50px;
+	left: 75px;
 	top: 15px;
 }
 
@@ -119,6 +102,7 @@
 
 .game-page__versus {
 	font-family: 'Lora', serif;
+	font-weight: normal;
 	position: relative;
 	top: -45px;
 	left: 112.5px;
@@ -133,7 +117,7 @@
 	flex-direction: row;
 	position: relative;
 	top: 60px;
-	left: 45px;
+	left: 70px;
 	height: 100px;
 	width: 300px;	
 }
@@ -152,29 +136,33 @@
 	padding:10px 5px;
 	position: relative;
 	top: 55px;
-	left: -292.5px;
-	margin-left: 10px;
-	margin-right: 40px; 
 }
 
+.win {
+	left: -280px;
+}
+
+.loss {
+	left: -232.5px;
+}
+
+.tie {
+	left: -182px;
+}
+.result-reveal {
+	display: none;
+}
 /*****************************************************END MOBILE STYLES*******************************************/
 @media all and (min-width: 960px){
 
-.game-page__lead {
-	left: 450px;
-}
-
-.game-page__heading {
-	font-size: 40px;
-}
 .game-page__title {
 	font-size: 32px;
-	left: 60px;
+	left: 500px;
 	margin-top: 0px;
 }
 
 .game-page__selector {
-	left: 295px;
+	left: 275px;
 }
 
 .game-page__image {
@@ -196,6 +184,10 @@
 	left: 30px;
 }
 
+.game-page__versus {
+	left: 115px;
+}
+
 .game-page__result {
 	left: 460px;
 	top: 50px;
@@ -206,14 +198,14 @@
 	margin-right: 80px;
 }
 .win {
-	left: -440px;
+	left: -432.5px;
 }
 
 .loss {
-	left: -392.5px;
+	left: -330px;
 }
 
 .tie {
-	left: -340px;
+	left: -230px;
 }
 }

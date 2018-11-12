@@ -37,23 +37,43 @@ function gameRules() {
     document.getElementById('win').value=(wins=wins+1);
     } else if (user==="Scissors!" && computer==="Rock!"){
     document.getElementById('loss').value=(losses=losses+1);
+    } 
+}
+
+function resultReveal() {
+    var wins = parseInt(document.getElementById('win').value),
+        losses = parseInt(document.getElementById('loss').value),
+        ties = parseInt(document.getElementById('tie').value);
+
+    if ((wins + losses + ties) === 50 && wins > 15){
+        alert("Smooth move, you're in a groove!")
+    } else if ((wins + losses + ties) === 50 && losses > 15){
+         alert("You've had a tough run, keep on going!")
+    } else {
+
     }
 }
+
+
+
 
 function rockSelect() {
     document.getElementById('user-display').value = "Rock!";
     generateComputerNum();
     gameRules();
+    resultReveal();
 }
 function paperSelect() {
     document.getElementById('user-display').value = "Paper!";
     generateComputerNum();
     gameRules();
+    resultReveal();
 }
 function scissorsSelect() {
     document.getElementById('user-display').value = "Scissors!";
     generateComputerNum();
     gameRules();
+    resultReveal();
 }
 
 
@@ -61,28 +81,5 @@ document.getElementById('rock-selector').onclick=rockSelect;
 document.getElementById('paper-selector').onclick=paperSelect;
 document.getElementById('scissors-selector').onclick=scissorsSelect;
 
-// document.getElementById('rock-selector').onclick = userPlaySelect;
-// function computerNumSet() {
-// }
-
-// }
-
-
-
-
-
-
-// });
-
-
-
-//Set buttons to a value  --- done
-//
-//Set game rules
-//
-//Random Generator --- done 
-//
-//
-//Track wins, losses and ties
 //
 //Reset button
