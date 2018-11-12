@@ -1,0 +1,280 @@
+body {
+	width: 320px;
+}
+.game-page {
+	font-family: Open Sans, sans-serif;
+	position: relative;
+	left: 10px;
+	text-align: justify;
+}
+
+.game-page__title {
+	color: #343e4f;
+	letter-spacing: .7px;
+	text-shadow: .5px .5px .5px black;
+	word-spacing: 5px;
+	position: relative;
+	top: 20px;
+	left: 75px;	
+}
+
+.game-page__selector {
+	position: relative;
+	top: 20px;
+	left: 75px;
+}
+
+.game-page__image {
+	cursor: pointer;
+	margin-right: 15px;
+	padding-top: 15px;
+	padding-left: 5px;
+	height: 80px;
+	width: auto;
+}
+
+.game-page__instruction {
+	position: relative;
+	left: 75px;
+	padding-top: 15px;
+}
+
+.game-page__battle {
+	background: #ff9a00;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 1px 1px 8px #1852af;
+	height: 105px;
+	width: 290px;
+	position: relative;
+	left: 75px;
+	top: 15px;
+}
+
+.game-page__battle-content {
+	position: relative;
+	left: 17.5px;
+	top: 10px;
+}
+
+.game-page__battle-label {
+	position: absolute;
+	font-size: 20px;
+}
+
+.user-label {
+	left: 27.5px;
+	bottom: 5px;
+}
+
+.computer-label {
+	left: 162.5px;
+	bottom: 5px;
+}
+
+.game-page__input {
+	border: 1px solid black;
+	border-radius:3px;
+	box-shadow: 1px 1px 4px black;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 5px;
+	margin-left: 10px;
+	margin-right: 30px;
+	width: 50px;	
+	height: 20px;
+}
+
+.user-display {
+	color: #4069ef;
+	position: relative;
+	left: -5px;
+	top: 10px;
+	width: 75px;
+}
+
+.computer-display {
+	color: #ef4040;
+	position: relative;
+	left: 25px;		
+	top: 10px;
+	width: 75px;
+}
+
+.game-page__versus {
+	font-family: 'Lora', serif;
+	font-weight: normal;
+	position: relative;
+	top: -45px;
+	left: 112.5px;
+}
+
+.game-page__result {	
+	background: #ff9a00;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 1px 1px 8px #1852af;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 60px;
+	left: 70px;
+	height: 100px;
+	width: 300px;	
+}
+
+.result-display {
+	color: #1d6b0d;
+	box-shadow: 1px 1px 4px black;
+	position: relative;
+	text-shadow: .5px .5px .1px black;
+	top: 16px;
+	left: 8px;
+	height: 48px;
+}
+
+.game-result__label {
+	font-family: 'Lora', serif;
+	font-weight: bold;
+	padding:10px 5px;
+	position: relative;
+	text-shadow: .5px .5px .1px black;
+	top: 55px;
+}
+
+.loss-display {
+	color: #e80d0d;
+}
+
+.tie-display {
+	color: #4e1396;
+}
+
+.win {
+	color: #1d6b0d;
+	left: -280px;
+}
+
+.loss {
+	color: #e80d0d;
+	left: -232.5px;
+}
+
+.tie {
+	color: #4e1396;
+	left: -182px;
+}
+
+.reset-button {
+	background: #ff9a00;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 1px 1px 8px #1852af;
+	cursor: pointer;
+	font-size: 20px;
+	position: relative;
+	bottom: -100px;
+	left: 175px;
+	height: 50px;
+	width: 100px;
+}
+
+.reset-button:focus {
+	outline: none;
+}
+/*****************************************************BIG MOBILE STYLES*******************************************/
+@media all and (min-width: 370px){
+
+body {
+	width: 375px;
+}
+
+.game-page {
+	left: 0px;
+}
+
+.win {
+	left: -282px;
+}
+
+.loss {
+	left: -235px;
+}
+.tie {
+	left: -185px;
+}
+}
+/*****************************************************END MOBILE STYLES*******************************************/
+@media all and (min-width: 960px){
+
+body {
+	width: 1024px;
+}
+
+.game-page__title {
+	font-size: 32px;
+	left: 500px;
+	margin-top: 0px;
+}
+
+.game-page__selector {
+	left: 275px;
+}
+
+.game-page__image {
+	height: 175px;
+	margin-right: 100px;
+	padding: 10px 10px;
+}
+
+.game-page__image:hover {
+	border: 1px solid gray;
+	box-shadow: 1px 1px 5px gray;
+}
+
+.game-page__instruction {
+	left: 510px;
+	/*top: 100px;	*/
+}
+.game-page__battle {
+	left: 500px;
+	top: 20px;
+	width: 320px;
+}
+
+.game-page__battle-content {
+	left: 30px;
+}
+
+.game-page__versus {
+	left: 115px;
+}
+
+.game-page__result {
+	left: 460px;
+	top: 50px;
+	width: 400px;
+}
+
+.result-display {
+	margin-right: 80px;
+}
+.win {
+	left: -432.5px;
+}
+
+.loss {
+	left: -332.5px;
+}
+
+.tie {
+	left: -230px;
+}
+
+.reset-button {
+	bottom: 0px;
+	left: 950px;
+	height: 40px;
+	width: 75px;
+}
+}

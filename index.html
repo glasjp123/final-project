@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rock, Paper, Scissors</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<title>The World's Oldest Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-	<script src='final.js'></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="game-page">
-		<h1 class="game-page__heading">The World's Oldest Game</h1>
-		<img src="rock.jpg" class="game-page__image">
-		<img src="paper.jpg" class="game-page__image">
-		<img src="scissors.jpg" class="game-page__image">
+		<h2 class="game-page__title">Rock - Paper - Scissors</h2>
+		<div class="game-page__selector">
+			<img src="rock.jpeg" alt="Pile of rocks" class="game-page__image" id="rock-selector">
+			<img src="paper.svg"  alt="Pile of paper" class="game-page__image" id="paper-selector">
+			<img src="scissors.png" alt="Scissors" class="game-page__image" id="scissors-selector">
+		</div>
 		<p class="game-page__instruction">Please click image to choose your play</p>
 		<div class="game-page__battle">
-			<input type="text" name="user" class="game-page__input user-display" readonly>
-			<input type="text" name="computer" class="game-page__input computer-display" readonly>
-			<h2 class="game-page__versus">vs.</h2>
+			<div class="game-page__battle-content">
+				<input type="text" name="user" class="game-page__input user-display" id="user-display" readonly>
+				<input type="text" name="computer" class="game-page__input computer-display" id="computer-display" readonly>
+				<label class="game-page__battle-label user-label">User</label>
+				<label class="game-page__battle-label computer-label">Computer</label>
+				<h2 class="game-page__versus">.vs.</h2>
+			</div>
 		</div>
-		<div class="game-result">
-			<input type="text" name="win" class="game-page__input result-display" readonly>
-			<input type="text" name="loss" class="game-page__input result-display" readonly>
-			<input type="text" name="tie" class="game-page__input result-display" readonly>
-			<label class="game-result__label">Wins</label>
-			<label class="game-result__label">Losses</label>
-			<label class="game-result__label">Ties</label>
-		</div>
-			<div class="game-result__label-line"></div>	
-			<div class="game-result__label-line"></div>
-			<div class="game-result__label-line"></div>
+		<div class="game-page__result">
+			<input type="text" name="win" value="0" class="game-page__input result-display" id="win" readonly>
+			<input type="text" name="loss" value="0" class="game-page__input result-display loss-display" id="loss" readonly>
+			<input type="text" name="tie" value="0" class="game-page__input result-display tie-display" id="tie" readonly>
+			<label class="game-result__label win">Wins</label>
+			<label class="game-result__label loss">Losses</label>
+			<label class="game-result__label tie">Ties</label>
+		</div>	
+		<button class="reset-button" id="reset">Reset</button>
 	</div>
+	<script src='app.js'></script>
 </body>
 </html>
