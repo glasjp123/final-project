@@ -131,7 +131,6 @@ body {
 .result-display {
 	color: #1d6b0d;
 	box-shadow: 1px 1px 4px black;
-	line-height: 100px;
 	position: relative;
 	text-shadow: .5px .5px .1px black;
 	top: 16px;
@@ -189,14 +188,14 @@ body {
 	outline: none;
 }
 /*****************************************************BIG MOBILE STYLES*******************************************/
+@media all and (min-width: 370px){
+
 body {
 	width: 375px;
 }
 
 .game-page {
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
+	left: 0px;
 }
 /*****************************************************END MOBILE STYLES*******************************************/
 @media all and (min-width: 960px){
