@@ -1,6 +1,10 @@
-
+body {
+	width: 320px;
+}
 .game-page {
 	font-family: Open Sans, sans-serif;
+	position: relative;
+	left: 10px;
 	text-align: justify;
 }
 
@@ -24,7 +28,7 @@
 	cursor: pointer;
 	margin-right: 15px;
 	padding-top: 15px;
-	padding-left: 10px;
+	padding-left: 5px;
 	height: 80px;
 	width: auto;
 }
@@ -87,6 +91,7 @@
 }
 
 .user-display {
+	color: #4069ef;
 	position: relative;
 	left: -5px;
 	top: 10px;
@@ -94,6 +99,7 @@
 }
 
 .computer-display {
+	color: #ef4040;
 	position: relative;
 	left: 25px;		
 	top: 10px;
@@ -123,8 +129,11 @@
 }
 
 .result-display {
+	color: #1d6b0d;
 	box-shadow: 1px 1px 4px black;
+	line-height: 100px;
 	position: relative;
+	text-shadow: .5px .5px .1px black;
 	top: 16px;
 	left: 8px;
 	height: 48px;
@@ -135,25 +144,66 @@
 	font-weight: bold;
 	padding:10px 5px;
 	position: relative;
+	text-shadow: .5px .5px .1px black;
 	top: 55px;
 }
 
+.loss-display {
+	color: #e80d0d;
+}
+
+.tie-display {
+	color: #4e1396;
+}
+
 .win {
+	color: #1d6b0d;
 	left: -280px;
 }
 
 .loss {
+	color: #e80d0d;
 	left: -232.5px;
 }
 
 .tie {
+	color: #4e1396;
 	left: -182px;
 }
-.result-reveal {
-	display: none;
+
+.reset-button {
+	background: #ff9a00;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 1px 1px 8px #1852af;
+	cursor: pointer;
+	font-size: 20px;
+	position: relative;
+	bottom: -100px;
+	left: 175px;
+	height: 50px;
+	width: 100px;
+}
+
+.reset-button:focus {
+	outline: none;
+}
+/*****************************************************BIG MOBILE STYLES*******************************************/
+body {
+	width: 375px;
+}
+
+.game-page {
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*****************************************************END MOBILE STYLES*******************************************/
 @media all and (min-width: 960px){
+
+body {
+	width: 1024px;
+}
 
 .game-page__title {
 	font-size: 32px;
@@ -166,8 +216,9 @@
 }
 
 .game-page__image {
-	height: 200px;
+	height: 175px;
 	margin-right: 100px;
+	padding: 10px 10px;
 }
 
 .game-page__instruction {
@@ -202,10 +253,17 @@
 }
 
 .loss {
-	left: -330px;
+	left: -332.5px;
 }
 
 .tie {
 	left: -230px;
+}
+
+.reset-button {
+	bottom: 0px;
+	left: 950px;
+	height: 40px;
+	width: 75px;
 }
 }

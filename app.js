@@ -11,7 +11,7 @@ function generateComputerNum() {
     }
     document.getElementById('computer-display').value = computer;
 }
-
+///// For Rules: considered assigning numbers to each value and using < = > but was easier to use strings at 2AM /////
 function gameRules() {
     var user = document.getElementById('user-display').value,
         computer = document.getElementById('computer-display').value,
@@ -49,12 +49,8 @@ function resultReveal() {
         alert("Smooth move, you're in a groove!")
     } else if ((wins + losses + ties) === 50 && losses > 15){
          alert("You've had a tough run, keep on going!")
-    } else {
-
-    }
+    } else {}
 }
-
-
 
 
 function rockSelect() {
@@ -63,12 +59,14 @@ function rockSelect() {
     gameRules();
     resultReveal();
 }
+
 function paperSelect() {
     document.getElementById('user-display').value = "Paper!";
     generateComputerNum();
     gameRules();
     resultReveal();
 }
+
 function scissorsSelect() {
     document.getElementById('user-display').value = "Scissors!";
     generateComputerNum();
@@ -76,10 +74,26 @@ function scissorsSelect() {
     resultReveal();
 }
 
+// function resetPage() {
+//     var user = document.getElementById('user-display').value,
+//         computer = document.getElementById('computer-display').value,
+//         wins = parseInt(document.getElementById('win').value),
+//         losses = parseInt(document.getElementById('loss').value),
+//         ties = parseInt(document.getElementById('tie').value);
+//         if ((user).length > 0) {
+//         user = user.reset(),
+//         computer = " ",
+//         wins = "0",
+//         losses = "0",
+//         ties = "0",
+//         console.log("works");
+//         } else {}
+// }   
+
 
 document.getElementById('rock-selector').onclick=rockSelect;
 document.getElementById('paper-selector').onclick=paperSelect;
 document.getElementById('scissors-selector').onclick=scissorsSelect;
+// document.getElementById('reset').onclick=resetPage;
 
-//
 //Reset button
