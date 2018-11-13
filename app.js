@@ -40,16 +40,19 @@ function gameRules() {
     } 
 }
 
-function resultReveal() {
+function hiddenText() {
     var wins = parseInt(document.getElementById('win').value),
-        losses = parseInt(document.getElementById('loss').value),
-        ties = parseInt(document.getElementById('tie').value);
+        hidden = document.getElementById('hidden').innerText,
+        hiddenArray = hidden.split(" "),
+        currentWinNum = parseInt(hiddenArray[1]);
 
-    if ((wins + losses + ties) === 50 && wins > 15){
-        prompt("Smooth move, you're in a groove!")
-    } else if ((wins + losses + ties) === 50 && losses > 15){
-         prompt("You've had a tough run, keep on going!")
-    } else {}
+        if (wins % 10 == 0 && wins > 1){
+            document.getElementById('hidden').style.display = "block";
+        } else if(wins % 10 != 0){
+            document.getElementById('hidden').style.display = "none";
+        } else if (wins > 10){
+            hiddenArray[1].innerText = (currentWinNum + 10);
+        } 
 }
 
 
@@ -57,22 +60,26 @@ function rockSelect() {
     document.getElementById('user-display').value = "Rock!";
     generateComputerNum();
     gameRules();
-    resultReveal();
+    hiddenText();
 }
 
 function paperSelect() {
     document.getElementById('user-display').value = "Paper!";
     generateComputerNum();
     gameRules();
-    resultReveal();
+    hiddenText();
 }
 
 function scissorsSelect() {
     document.getElementById('user-display').value = "Scissors!";
     generateComputerNum();
     gameRules();
-    resultReveal();
+    hiddenText();
 }
+
+document.getElementById('rock-selector').onclick=rockSelect;
+document.getElementById('paper-selector').onclick=paperSelect;
+document.getElementById('scissors-selector').onclick=scissorsSelect;
 
 // function resetPage() {
 //     var user = document.getElementById('user-display').value,
@@ -88,10 +95,3 @@ function scissorsSelect() {
 // document.getElementById('reset').onclick=resetPage;
 
 ////// Couldn't figure out how to reset the input fields so I just cheated and made the button reload the page //////
-
-
-document.getElementById('rock-selector').onclick=rockSelect;
-document.getElementById('paper-selector').onclick=paperSelect;
-document.getElementById('scissors-selector').onclick=scissorsSelect;
-
-//Reset button

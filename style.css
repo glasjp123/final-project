@@ -1,6 +1,7 @@
 body {
 	width: 320px;
 }
+
 .game-page {
 	font-family: Open Sans, sans-serif;
 	position: relative;
@@ -182,15 +183,19 @@ body {
 .reset-button:focus {
 	outline: none;
 }
+
+.win-tracker {
+	display: none;
+	font-size: 15px;
+	position: relative;
+	top: -140px;
+	left: 120px;
+}
 /*****************************************************BIG MOBILE STYLES*******************************************/
 @media all and (min-width: 370px){
 
 body {
-	width: 320px;
-}
-
-.game-page {
-	left: 0px;
+	width: 300px;
 }
 
 .win {
@@ -198,10 +203,10 @@ body {
 }
 
 .loss {
-	left: -230px;
+	left: -225px;
 }
 .tie {
-	left: -180px;
+	left: -175px;
 }
 }
 /*****************************************************END MOBILE STYLES*******************************************/
@@ -276,5 +281,10 @@ body {
 	left: 950px;
 	height: 40px;
 	width: 75px;
+}
+
+.win-tracker {
+	top: -200px;
+	left: 850px;
 }
 }
