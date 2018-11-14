@@ -194,7 +194,8 @@ body {
 @media all and (min-width: 370px){
 
 body {
-	width: 300px;
+	height: auto;
+	width: 370px;
 }
 
 .win {
@@ -202,10 +203,10 @@ body {
 }
 
 .loss {
-	left: -225px;
+	left: -237.5px;
 }
 .tie {
-	left: -175px;
+	left: -190px;
 }
 }
 /***********************************************END BIGGER MOBILE STYLES*******************************************/
