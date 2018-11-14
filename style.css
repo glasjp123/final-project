@@ -195,7 +195,11 @@ body {
 
 body {
 	height: auto;
-	width: 370px;
+	width: 360px;
+}
+
+.game-page {
+	left: -50px;
 }
 
 .win {
