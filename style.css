@@ -190,7 +190,7 @@ body {
 	top: -140px;
 	left: 120px;
 }
-/*****************************************************BIG MOBILE STYLES*******************************************/
+/**********************************************END SMALLER MOBILE STYLES*******************************************/
 @media all and (min-width: 370px){
 
 body {
@@ -208,7 +208,7 @@ body {
 	left: -175px;
 }
 }
-/*****************************************************END MOBILE STYLES*******************************************/
+/***********************************************END BIGGER MOBILE STYLES*******************************************/
 @media all and (min-width: 960px){
 
 body {
@@ -237,11 +237,10 @@ body {
 }
 
 .game-page__instruction {
-	left: 510px;
-	/*top: 100px;	*/
+	left: 525px;
 }
 .game-page__battle {
-	left: 500px;
+	left: 512px;
 	top: 20px;
 	width: 320px;
 }
@@ -255,7 +254,7 @@ body {
 }
 
 .game-page__result {
-	left: 460px;
+	left: 475px;
 	top: 50px;
 	width: 400px;
 }
