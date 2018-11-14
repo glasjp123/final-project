@@ -185,7 +185,6 @@ body {
 }
 
 .win-tracker {
-	display: none;
 	font-size: 15px;
 	position: relative;
 	top: -140px;
@@ -284,6 +283,7 @@ body {
 }
 
 .win-tracker {
+	font-size: 25px;
 	top: -200px;
 	left: 850px;
 }

@@ -1,8 +1,8 @@
-
+ 
 function generateComputerNum() {
   var computer = [1,2,3];
   var random = computer[Math.floor(Math.random()*computer.length)];
-    if (random === 1){
+     if (random === 1){
     computer = "Rock!";
     } else if (random === 2){
     computer = "Paper!";
@@ -18,7 +18,6 @@ function gameRules() {
         wins = parseInt(document.getElementById('win').value),
         losses = parseInt(document.getElementById('loss').value),
         ties = parseInt(document.getElementById('tie').value);
-
     if (user==="Rock!" && computer==="Rock!"){
     document.getElementById('tie').value=(ties=ties+1);
     } else if (user==="Rock!" && computer==="Paper!"){
@@ -41,20 +40,13 @@ function gameRules() {
 }
 
 function hiddenText() {
-    var wins = parseInt(document.getElementById('win').value),
-        hidden = document.getElementById('hidden').innerText,
-        hiddenArray = hidden.split(" "),
-        currentWinNum = parseInt(hiddenArray[1]);
-
+    var wins = parseInt(document.getElementById('win').value);
         if (wins % 10 == 0 && wins > 1){
-            document.getElementById('hidden').style.display = "block";
-        } else if(wins % 10 != 0){
-            document.getElementById('hidden').style.display = "none";
-        } else if (wins > 10){
-            hiddenArray[1].innerText = (currentWinNum + 10);
-        } 
+            document.getElementById('win-tracker').innerText = "Wow, " + wins + " wins! Keep on going!";
+        } else {
+            document.getElementById('win-tracker').innerText = "";
+        }
 }
-
 
 function rockSelect() {
     document.getElementById('user-display').value = "Rock!";
@@ -80,18 +72,3 @@ function scissorsSelect() {
 document.getElementById('rock-selector').onclick=rockSelect;
 document.getElementById('paper-selector').onclick=paperSelect;
 document.getElementById('scissors-selector').onclick=scissorsSelect;
-
-// function resetPage() {
-//     var user = document.getElementById('user-display').value,
-//         computer = document.getElementById('computer-display').value,
-//         wins = parseInt(document.getElementById('win').value),
-//         losses = parseInt(document.getElementById('loss').value),
-//         ties = parseInt(document.getElementById('tie').value);
-//         if ((user).length > 0){
-//         form.user = " ",
-//         console.log("works");
-//         } else {}
-// }   
-// document.getElementById('reset').onclick=resetPage;
-
-////// Couldn't figure out how to reset the input fields so I just cheated and made the button reload the page //////
